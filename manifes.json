@@ -1,9 +1,9 @@
 {
-    "name": "RVM",
-    "short_name": "RVM",
+    "name": "MotorSport Zone",
+    "short_name": "MotorSport",
     "start_url": "/",
     "display": "standalone",
     "background_color": "transparent",
-    "theme_color": "#ffffff"
+    "theme_color": "#000000"
   }
   

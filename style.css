@@ -42,3 +42,57 @@
       line-height: 5rem;
     }
    }
+
+   .toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+    background-color: #fff; 
+    color: #000;
+    padding: 10px;
+    border-radius: 9999px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    animation: slideIn 0.5s ease-out, fadeOut 0.5s 2.5s ease-out forwards;
+    align-items: center; 
+  }
+  
+  .toast .icon {
+    margin-right: 10px; /* Spațierea între iconiță și text */
+  }
+  
+  .toast .close-btn {
+    margin-left: auto; /* Mutăm butonul de închidere spre dreapta */
+    cursor: pointer;
+    color: #000;
+    font-size: 20px;
+  }
+  
+  .toast img {
+    width: 30px; /* Ajustează dimensiunea iconiței */
+    height: auto;
+  }
+  
+  
+  @keyframes slideIn {
+    from {
+      top: -50px;
+      opacity: 0;
+    }
+    to {
+      top: 20px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

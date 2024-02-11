@@ -27,9 +27,11 @@
   <link rel="manifest" href="manifes.json">
   <!-- Fix zooming on iPhone devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="script.js"></script>
 </head>
 
-<body class="overflow-hidden">
+<body>
+  <div class="flex space-x-2 items-center justify-center" id="toast-container"></div>
   <div class="">
     <div class="absolute h-screen w-screen">
       <video id="myVideo" class="object-cover w-full h-full" src="/images/background_gradient.mp4" loop autoplay
@@ -62,10 +64,10 @@
             <div>
               <div class="flex">
                 <div class="w-10/12 mx-auto md:w-full">
-                  <form>
+                  <form onsubmit="sendMail(event)">
                     <div class="flex space-x-5">
                       <div class="w-full">
-                        <input placeholder="Email address" id="email" type="email" required
+                        <input placeholder="Email address" id="email_value" type="email" required
                           class="text-gray-800 placeholder-white w-full bg-transparent py-3 border border-white rounded-full outline-none px-3 text-white"
                           style="font-size: 16px">
                       </div>
@@ -74,6 +76,7 @@
                           class="bg-white rounded-full px-5 py-3 text-black mix-blend-screen border border-white hover:bg-transparent hover:text-white transition-all"
                           type="submit">Sign&nbsp;up</button>
                       </div>
+                    </div>
                   </form>
                 </div>
               </div>

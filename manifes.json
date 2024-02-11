@@ -4,6 +4,6 @@
     "start_url": "/",
     "display": "standalone",
     "background_color": "transparent",
-    "theme_color": "#000000"
+    "theme_color": "transparent"
   }
   

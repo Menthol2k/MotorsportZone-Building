@@ -36,11 +36,10 @@ const sendMail = (event) => {
   showToast("Abonat cu success");
 
     fetch(
-      `https://api.telegram.org/bot6942709025:AAGoI1eKQ4ait4urHFWpyynDyQeoe2kFYJM/sendMessage?chat_id=@mszzone&text=📰(${email_value}) Sa abonat la newsletter 📰`
+      `https://api.telegram.org/bot6942709025:AAGoI1eKQ4ait4urHFWpyynDyQeoe2kFYJM/sendMessage?chat_id=@mszzone&text=${email_value} s-a abonat la newsletter 📰`
     )
       .then((response) => {
         console.log("Send successfully");
-        // Resetează valoarea câmpului de email la șirul gol
         email_input.value = "";
       })
       .catch((error) => {

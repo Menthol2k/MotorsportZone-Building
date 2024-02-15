@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotorSport Zone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <meta name="description" content="MotorSport Zone este în curs de dezvoltare și va fi destinația online dedicată pasionaților de automobile și motociclete. Urmează să găsești o gamă variată de produse de merchandising pentru a-ți exprima pasiunea pentru mașini și motociclete. Fii la curent cu lansările noastre și bucură-te de o experiență de shopping unică, concepută special pentru entuziaștii auto și moto.">
+  <meta name="tags" content="MotorSport Zone, pasionați de mașini, pasionați de motociclete, echipamente auto, echipamente moto, accesorii auto, accesorii moto, tricouri, căciuli, produse de merchandising, evenimente motorsport, recenzii auto, recenzii moto, tutoriale auto, tutoriale moto, comunitate auto, comunitate moto, pilot profesionist, iubitor de motorsport">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Romanian">
+  <meta property="og:image" content="/images/seo_banner.jpg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifes.json">
+  <!-- Fix zooming on iPhone devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="flex space-x-2 items-center justify-center" id="toast-container"></div>
+  <div class="">
+    <div class="absolute h-screen w-screen">
+      <img class="object-cover w-full h-full" src="/images/bg_image.jpg" />
+    </div>
+
+    <div class="relative">
+
+      <img class="w-[180px] md:w-[150px] py-10 mx-auto" src="/images/logo.png">
+      <!-- EXACT SIZE -->
+      <div class="flex flex-col my-10 md:my-36">
+        <div class="flex line-height justify-center text-5xl md:text-8xl mb-2 md:-mb-1 items-center w-5/6 md:w-full text-center mx-auto text-white josefin-bold tracking-wider" style="letter-spacing: 0em;">
+          <div>
+            <div>
+              <h1>COMING SOON</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center text-2xl md:text-4xl w-full text-center mx-auto text-white josefin-light tracking-wider" style="letter-spacing: -2px;">
+          <p class="w-10/12 md:w-5/12">In the meantime, Sign up for our monthly newsletter to stay up to date.</p>
+        </div>
+
+        <div class="flex justify-center items-center mt-5">
+          <div class="w-full max-w-md text-white josefin-normal tracking-wider">
+            <div>
+              <div class="flex">
+                <div class="w-10/12 mx-auto md:w-full">
+                  <form onsubmit="sendMail(event)">
+                    <div class="flex space-x-5">
+                      <div class="w-full">
+                        <input placeholder="Email address" id="email_value" type="email" required class="text-gray-800 placeholder-white w-full bg-transparent py-3 border border-white rounded-full outline-none px-3 text-white" style="font-size: 16px">
+                      </div>
+                      <div>
+                        <button class="bg-white rounded-full px-5 py-3 text-black mix-blend-screen border border-white hover:bg-transparent hover:text-white transition-all" type="submit">Sign&nbsp;up</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="absolute left-0 bottom-0 mx-auto w-full mb-5 pt-20 text-center text-white josefin-bold text-xl">
+    <!-- <p class="my-10">OR</p> -->
+    <div class="text-white flex space-x-16 justify-center">
+      <a class="hover:opacity-75 transition-all" href="https://bit.ly/4bAxTjM" target="_blank"><i class="fa-brands fa-xl fa-instagram"></i></a>
+      <a class="hover:opacity-75 transition-all" href="https://bit.ly/3OE7Xdf" target="_blank"><i class="fa-brands fa-xl fa-tiktok"></i></a>
+      <a class="hover:opacity-75 transition-all" href="https://bit.ly/42z8XW2" target="_blank"><i class="fa-brands fa-xl fa-youtube"></i></a>
+      <a class="hover:opacity-75 transition-all" href="https://bit.ly/48j5w6X" target="_blank"><i class="fa-brands fa-xl fa-discord"></i></a>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
